@@ -1,0 +1,7 @@
+title 0.6: Single Page App New Note
+
+Browser->Server: HTTP POST: request address new_note_spa
+Server->Browser: Status Code 201
+Note over Browser: Execute Javascript code
+Note over Browser: Event Handler create new note and rerender the list
+Browser->Server: HTTP POST: new note data sent as JSON-string

@@ -1,0 +1,14 @@
+title 0.4: New Note
+
+Browser->Server: HTTP POST: New Address
+Server->Browser: HTML Status Code 302
+Browser->Browser: Reload notes page
+Browser->Server:HTTP GET: css file path
+Server->Browser: main.css
+Browser->Server:HTTP GET: js file path 
+Server->Browser:main.js
+Browser->Browser: Run Javascript Code
+Browser->Server:HTTP GET: data.json file path
+Server->Browser:data.json
+Browser->Browser:Event Handler
+Browser->Display:Render Note
